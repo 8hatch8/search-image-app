@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { createApi } from "unsplash-js";
-import { ImageList } from "./ImageList";
+import ImageList from "./ImageList";
 
 const App = () => {
   const api = createApi({
@@ -24,7 +24,7 @@ const App = () => {
         <div style={{ fontWeight: "bold" }}>Image Search</div>
         <input type='text' placeholder='search by enter key' onKeyDown={(e) => pressEnter(e)} />
       </div>
-      <ImageList />
+      <ImageList props={null} />
     </>
   );
 };
